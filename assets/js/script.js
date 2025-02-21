@@ -271,7 +271,7 @@ function switchLanguage(lang) {
     
     // 更新按钮激活状态
     document.querySelectorAll('.lang-btn').forEach(btn => {
-        if ((lang === 'zh' && btn.textContent === '中文') ||
+        if ((lang === 'zh' && btn.textContent === '中') ||
             (lang === 'en' && btn.textContent === 'EN')) {
             btn.classList.add('active');
         } else {
