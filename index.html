@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成都磊辰洋科技有限公司官网</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- 在 body 开始处添加 -->
+    <div class="menu-overlay"></div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="#"><img src="assets/img/logo.png" alt="Company Logo"></a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" data-translate="nav_home">首页</a></li>
+                <li><a href="#services" data-translate="nav_services">服务</a></li>
+                <li><a href="#cases" data-translate="nav_cases">案例</a></li>
+                <li><a href="#tech" data-translate="nav_tech">技术能力</a></li>
+                <li><a href="#contact" data-translate="nav_contact">联系我们</a></li>
+                <li class="language-switch">
+                    <button onclick="switchLanguage('zh')" class="lang-btn">中</button>
+                    <button onclick="switchLanguage('en')" class="lang-btn">EN</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero部分 -->
+    <section id="home" class="hero">
+        <canvas id="heroCanvas"></canvas>
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <h1 data-translate="title">磊辰洋科技</h1>
+            <p data-translate="hero_subtitle">专业的技术服务，助力企业数字化转型</p>
+            <a href="#contact" class="cta-button" data-translate="cta_button">免费咨询</a>
+        </div>
+    </section>
+
+    <!-- 服务部分 -->
+    <section id="services" class="services">
+        <div class="section-container">
+            <h2 class="section-title" data-aos="fade-up" data-translate="services_title">我们的服务</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3 data-translate="web_dev_title">Web开发</h3>
+                    <p data-translate="web_dev_desc">提供响应式网站开发、企业管理系统、电商平台等专业web应用开发服务</p>
+                    <a href="#" class="learn-more" data-translate="learn_more">了解更多</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3 data-translate="mobile_dev_title">移动应用开发</h3>
+                    <p data-translate="mobile_dev_desc">iOS和Android原生应用开发，Flutter跨平台解决方案，确保最佳用户体验</p>
+                    <a href="#" class="learn-more" data-translate="learn_more">了解更多</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-cloud"></i>
+                    <h3 data-translate="cloud_title">云服务</h3>
+                    <p data-translate="cloud_desc">提供云架构设计、部署和运维服务，助力企业实现数字化转型</p>
+                    <a href="#" class="learn-more" data-translate="learn_more">了解更多</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-desktop"></i>
+                    <h3 data-translate="desktop_title">桌面应用开发</h3>
+                    <p data-translate="desktop_desc">基于Electron、Qt等框架的跨平台桌面应用开发，满足企业定制化需求</p>
+                    <a href="#" class="learn-more" data-translate="learn_more">了解更多</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <i class="fas fa-robot"></i>
+                    <h3 data-translate="ai_title">人工智能应用</h3>
+                    <p data-translate="ai_desc">AI算法集成、机器学习模型部署，为企业提供智能化解决方案</p>
+                    <a href="#" class="learn-more" data-translate="learn_more">了解更多</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3 data-translate="security_title">网络安全服务</h3>
+                    <p data-translate="security_desc">应用安全测试、漏洞扫描、安全加固，保障企业系统安全</p>
+                    <a href="#" class="learn-more" data-translate="learn_more">了解更多</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 案例部分 -->
+    <section id="cases" class="cases">
+        <div class="section-container">
+            <h2 class="section-title" data-aos="fade-up" data-translate="cases_title">成功案例</h2>
+            <div class="cases-grid">
+                <div class="case-card" data-aos="fade-right">
+                    <img src="assets/img/case1.jpg" alt="Case 1">
+                    <div class="case-content">
+                        <h3 data-translate="case1_title">平台开发</h3>
+                        <p data-translate="case1_desc">为某知名品牌开发的全渠道电商平台、企业管理系统、POS系统等</p>
+                    </div>
+                </div>
+                <div class="case-card" data-aos="fade-left">
+                    <img src="assets/img/case2.jpg" alt="Case 2">
+                    <div class="case-content">
+                        <h3 data-translate="case2_title">数字化管理系统</h3>
+                        <p data-translate="case2_desc">大型企事业单位内部管理系统开发与部署</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技术能力部分 -->
+    <section id="tech" class="tech">
+        <div class="section-container">
+            <h2 class="section-title" data-translate="tech_title">技术能力</h2>
+            <div class="tech-container">
+                <div class="tech-stack-section">
+                    <h3 data-translate="frontend_title">前端技术</h3>
+                    <div class="tech-icons">
+                        <div class="tech-icon">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fab fa-vuejs"></i>
+                            <span>Vue.js</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fab fa-angular"></i>
+                            <span>Angular</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-stack-section">
+                    <h3 data-translate="backend_title">后端技术</h3>
+                    <div class="tech-icons">
+                        <div class="tech-icon">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="development-process">
+                <h3 data-translate="dev_process">开发流程</h3>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4 data-translate="requirement_title">需求分析</h4>
+                        <p data-translate="requirement_desc">深入理解客户需求，制定解决方案</p>
+                    </div>
+                    <div class="process-step">
+                        <i class="fas fa-code"></i>
+                        <h4 data-translate="agile_title">敏捷开发</h4>
+                        <p data-translate="agile_desc">采用敏捷方法，快速迭代</p>
+                    </div>
+                    <div class="process-step">
+                        <i class="fas fa-check-circle"></i>
+                        <h4 data-translate="qa_title">质量保证</h4>
+                        <p data-translate="qa_desc">严格的测试和代码审查</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们部分 -->
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <h2 class="section-title" data-translate="contact_title">联系我们</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item" data-aos="fade-right">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3 data-translate="address_title">地址</h3>
+                        <p data-translate="address">成都市高新区</p>
+                    </div>
+                    <div class="info-item" data-aos="fade-right" data-aos-delay="100">
+                        <i class="fas fa-phone"></i>
+                        <h3 data-translate="phone_title">电话</h3>
+                        <p class="protected-info" data-info="13668190636">136****0636</p>
+                    </div>
+                    <div class="info-item" data-aos="fade-right" data-aos-delay="200">
+                        <i class="fas fa-envelope"></i>
+                        <h3 data-translate="email_title">邮箱</h3>
+                        <p class="protected-info" data-info="ls186@qq.com">ls***@qq.com</p>
+                    </div>
+                </div>
+                <form class="contact-form" data-aos="fade-left" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="user_name" placeholder="您的姓名" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="user_email" placeholder="您的邮箱" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="您的需求" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text" data-translate="send_message">发送信息</span>
+                        <span class="loading-spinner"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚部分 -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-translate="about_us_title">关于我们</h3>
+                    <p data-translate="about_us_desc">成都磊辰洋科技有限公司专注于提供高质量的技术解决方案，助力企业数字化转型</p>
+                </div>
+                <div class="footer-section">
+                    <nav class="footer-nav">
+                        <a href="#services" data-translate="nav_services">服务</a>
+                        <a href="#cases" data-translate="nav_cases">案例</a>
+                        <a href="#tech" data-translate="nav_tech">技术</a>
+                        <a href="#contact" data-translate="nav_contact">联系</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-translate="copyright">© 2012-2025 成都磊辰洋科技有限公司. 保留所有权利</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/background-animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html> 
